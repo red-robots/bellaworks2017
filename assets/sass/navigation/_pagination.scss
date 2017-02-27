@@ -1,0 +1,37 @@
+/* Pagination
+-------------------------------------------------------------- */
+.navigation {
+	clear:both;
+	margin: 20px 0 40px 0;	
+}
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+	color: #fff;
+	text-decoration:none;
+}
+
+.navigation li {
+	display: inline;
+	line-height: 1.3;
+}
+.navigation li a {
+	display: inline-block;
+	margin: 0 0 5px 0;	
+}
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+	background-color: #195eaa;
+	border-radius: 3px;
+	cursor: pointer;
+	padding: 8px;
+	padding: 0.75rem;
+}
+
+.navigation li a:hover,
+.navigation li.active a {
+	background-color: #5FA03D;
+}

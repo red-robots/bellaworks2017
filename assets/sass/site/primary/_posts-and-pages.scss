@@ -1,0 +1,610 @@
+/* Home page */
+section.welcome {
+	width: 100%;
+	padding: 100px 0 0 0;
+	text-align: center;
+}
+.home-section {
+	width: 100%;
+	position: relative;
+	h2 {
+		width: auto;
+		position: relative;
+		font-size: 20px;
+		@media screen and (min-width: $tabwidth) {
+			font-size: 30px;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 40px;
+		}
+		&.header {
+			margin: 30px auto 50px auto;
+			display: inline-block;
+			&:after {
+				content : "";
+				position: absolute;
+				left    : 25%;
+				bottom  : -15px;
+				height  : 1px;
+				width   : 50%;  /* or 100px */
+				border-bottom:3px solid $color-blue;
+				clear: both;
+			}
+		}
+		&.center {
+			
+			text-align: center;
+		}
+		&.part {
+			text-align: left;
+			&:after {
+				content : "";
+				position: absolute;
+				left    : 0%;
+				bottom  : -15px;
+				height  : 1px;
+				width   : 50%;  /* or 100px */
+				border-bottom:3px solid $color-blue;
+				clear: both;
+			}
+		}
+		
+	}
+}
+.banner-home {
+	width: 100%;
+	position: relative;
+	// margin-top: 20px;
+	padding: 30px 0;
+	background-color: $color-blue;
+	// background-image: -webkit-gradient(linear,0% 0%,25% 100%,from($color-blue),to($color-green));
+	img {
+		width: 100%;
+	}
+	.banner-text {
+		position: absolute;
+		width: 50%;
+		right: 20px;
+		top: 20%;
+		@media screen and (min-width: $tabwidth) {
+			width: 60%;
+			right: 20px;
+			top: 5%;
+		}
+		@media screen and (min-width: $deskwidth) {
+			width: 60%;
+			right: 20px;
+			top: 5%;
+		}
+	}
+}
+section.about {
+	width: 100%;
+	position: relative;
+	font-size: 24px;
+	font-family: $font-noto;
+	text-align: center;
+	float: left;
+	padding: 0px 0;
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+	@media screen and (min-width: $deskwidth) {
+		font-size: 24px;
+	}
+	.content {
+		padding: 0 5% 5% 5%;
+		float: right;
+	}
+	.image {
+		float: left;
+	}
+	.image-about {
+		display: block;
+		width: 100%;
+		@media screen and (min-width: $tabwidth) {
+			width: 33%;
+		}
+	}
+}
+section.why-work {
+	width: 100%;
+	position: relative;
+	font-size: 24px;
+	font-family: $font-noto;
+	text-align: center;
+	float: left;
+	padding: 40px 0;
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+	@media screen and (min-width: $deskwidth) {
+		font-size: 24px;
+	}
+	.content {
+		padding: 5%;
+		float: right;
+	}
+	.image {
+		float: left;
+	}
+}
+figure.effect-ruby .small-excerpt {
+	font-size: 15px;
+	p {
+		font-size: 15px;
+	}
+}
+section.news {
+	width: 100%;
+	position: relative;
+	font-size: 24px;
+	font-family: $font-noto;
+	text-align: center;
+	float: left;
+	padding: 40px 0;
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+	@media screen and (min-width: $deskwidth) {
+		font-size: 24px;
+	}
+	.content {
+		padding: 5%;
+		float: left;
+	}
+	.image {
+		float: right;
+	}
+}
+section.why-work, section.about {
+	// see above for split
+	a {
+		
+		&:hover {
+		
+		}
+	}
+	.content {
+		display: block;
+		width: 90%;
+		
+		text-align: left;
+		line-height: 1.2;
+		@media screen and (min-width: $tabwidth) {
+			width: 56%;
+		}
+		p {
+			margin-bottom: 20px;
+		}
+	}
+	.image {
+		display: block;
+		width: 100%;
+		background-color: $color-blue;
+		@media screen and (min-width: $tabwidth) {
+			width: 33%;
+		}
+	}
+	
+	h2{
+		width: auto;
+		position: relative;
+		display: inline-block;
+		// font-size: 40px;
+		margin-bottom: 50px;
+
+		&.part {
+			text-align: left;
+			&:after {
+				content : "";
+				position: absolute;
+				left    : 0%;
+				bottom  : -15px;
+				height  : 1px;
+				width   : 50%;  /* or 100px */
+				border-bottom:3px solid $color-blue;
+				clear: both;
+			}
+		}
+	}
+	h3 {
+		margin: 0 0 20px 0;
+		color: $color-blue;
+	}
+
+}
+
+#home-intro {
+	/*background-color: #f6f6f6;*/
+	text-align: center;
+	padding: 0px 0 0px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	position: relative;
+	display: none;
+	@media screen and (min-width: $tabwidth) {
+		display: block;
+	}
+	@media screen and (min-width: $deskwidth) {
+
+	}
+}
+h2.homeintro {
+	font-size: 16px;
+	line-height: 1.2;
+	color: #fff;
+	font-family: $font-noto;
+	text-align: left;
+	font-weight: normal;
+	@media screen and (min-width: $tabwidth) {
+		font-size: 24px;
+		width: 75%;
+		display: block;
+		margin :9% auto 0px auto;
+	}
+	@media screen and (min-width: $deskwidth) {
+		font-size: 36px;
+	}
+}
+.hit {
+	width: auto;
+	display: inline-block;
+	margin: 0px auto;
+	/*background-color: rgba(255,255,255, .7);*/
+	/*background-color: rgba(20,93,174,.8);*/
+	/*background-color: rgba(0,0,0,.5);*/
+	padding:  0px /*12px*/ ;
+	clear:both;	
+}
+.home-intro-subtext {
+	font-family: $font-noto;
+	font-size: 18px;
+	color: #969393;
+	text-align: center;
+	line-height: 1.3;
+	font-weight: normal;	
+/*	background-color: rgba(255,255,255,.7);
+	padding: 20px;*/
+	@media screen and (min-width: $tabwidth) {
+		width: 100%;
+		text-align:center;
+		position: absolute;
+		bottom: 0px;
+		display: inline-block;
+		margin-left:-50%;
+	}
+	@media screen and (min-width: $deskwidth) {
+
+	}
+}
+.home-projects {
+	background-color: #FFFFFF;
+	padding: 50px 0 20px 0;
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+}
+.home-projects-container {
+	width: 100%;
+	overflow: hidden;	
+	text-align: center;
+	@media screen and (min-width: $tabwidth) {
+		width: 90%;
+		margin: 0 auto;
+		padding-left: 3%;
+	}
+	@media screen and (min-width: $deskwidth) {
+
+	}
+}
+.recent-proj {
+	width: 100%; 
+	display: inline-block;
+	position: relative;
+	color: #5FA03D;
+	padding: 15px 0 15px 0;
+	font-size: 34px;
+	font-family: $font-noto;
+	text-align: center;
+	@media screen and (min-width: $tabwidth) {
+		width: auto;
+		position: absolute;
+		left:-46px;
+		top: 40%;
+		transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		-o-transform: rotate(-90deg);
+		color: #2E5975;
+		padding: 8px;
+		font-size: 20px;
+		font-family: $font-noto;
+	}
+	@media screen and (min-width: $deskwidth) {
+		padding: 15px;
+		font-size: 34px;
+		left:-76px;
+	}
+}
+/* Home news feed */
+.home-latestpost {
+	width: 100%;
+	margin: 0;
+	padding: 40px 0 40px 0;	
+	position: relative;
+	overflow: hidden;
+	display: block;
+	z-index: 20;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+.home-latestpost-opacity {
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: block;
+	z-index: 21;
+}
+.homepost {
+	width: auto;
+	margin: 40px auto;
+	text-align: center;
+	color: #2E5975;
+	overflow: hidden;
+	clear: both;
+	position: relative;
+	z-index: 23;
+	@media screen and (min-width: $tabwidth) {
+		width: 400px;
+	}
+	@media screen and (min-width: $deskwidth) {
+
+	}
+}
+.homepost-date {
+	font-family: $font-noto;
+	color: #639900;
+	font-size: 26px;
+	margin: 0 0 20px 0;
+}
+h2.homepost-title {
+	font-family: $font-noto;
+	font-weight: normal;
+	font-size: 26px;
+	border-top: 1px solid #2E5975;
+	padding: 20px 0 20px 0;
+}
+.homepost-excerpt {
+	font-family: WesFY-Medium;
+	font-size: 16px;
+	line-height: 1.4;
+}
+.homepost-readmore {
+	width: auto;
+	display: inline-block;
+	margin: 30px auto;
+	font-family: $font-noto;
+	font-size: 16px;
+}
+.homepost-readmore a {
+	width: auto;
+	display: inline-block;
+	background-color: #fff;
+	color: #639900;
+	text-decoration: none;
+	padding: 10px 15px;
+	transition: background-color, color 0.3s ease;
+	&:hover {
+		color: #fff;
+		background-color:#639900;
+	}
+}
+
+/*-----------------------------------*/
+/***** Homepage Recent Proects *****/
+/*----------------------------------*/
+.grid figure {
+	display: inline-block;
+	float: none;
+	margin: 10px auto;
+	width: 100%;
+	overflow: hidden;
+	@media screen and (min-width: $tabwidth) {
+		position: relative;
+		float: left;
+		overflow: hidden;
+		margin: 10px 1%;
+		// background: rgba(46,89,117,1);
+		background: rgba($color-blue, 1);
+		text-align: center;
+		cursor: pointer;
+		display: inline;
+	}
+	@media screen and (min-width: $deskwidth) {
+
+	}
+}
+.grid {
+	width: 250px;
+	height: 250px;
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	list-style: none;
+	text-align: center;
+	@media screen and (min-width: $tabwidth) {
+		position: relative;
+		float: left;
+		margin: 10px 2%;
+		padding: 1em 0 4em;
+		list-style: none;
+		text-align: center;
+		margin: 10px 1%;
+		width: 30%;
+		height: 23vw;
+	}
+	@media screen and (min-width: $deskwidth) {
+
+	}
+	
+}
+
+/* Common style */
+
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+	overflow:hidden;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	padding: 0px;
+
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0 !important ;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+/*	width: 90%;*/
+	padding: 2%;
+	margin: 0 auto;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 24px;
+	line-height: 1.3;
+	padding: 0 15px 0 15px;
+}
+figure.effect-ruby {
+	// background-color: rgba($color-blue,.8);
+
+background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+    background-image: -webkit-linear-gradient(260deg, $color-blue 0%, $color-green 100%);
+    background-image: linear-gradient(-170deg, $color-blue 0%, $color-green 100%);	
+}
+
+figure.effect-ruby img {
+	opacity: .1;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+}
+
+figure.effect-ruby:hover img {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-ruby h2 {
+	width: 100%;
+	display: inline-block;
+	margin: 10% 0% 0 50%;
+	position: absolute;
+	bottom: 40%;
+	left: -50%;
+	// left: 0;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+	opacity: 1;
+	padding: 1em 0 1em 0;
+	// border: 1px solid #fff;
+	background-color: rgba(#fff,.9);
+	color: $color-blue;
+	text-transform: uppercase;
+	font-size: 12px;
+	@media screen and (min-width: $tabwidth) {
+		bottom: 30%;
+		font-size: 14px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		font-size: 16px;	
+		bottom: 10%;
+	}
+}
+
+figure.effect-ruby p {
+	margin: 0em 0 0;
+	margin-top: 0%;
+	opacity: 1;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0) scale(1);
+	transform: translate3d(0,20px,0) scale(1);
+	    font-family: $font-noto;
+	  // font-weight: 300;
+	  display: none;
+	@media screen and (min-width: $tabwidth) {
+
+	}
+	@media screen and (min-width: $deskwidth) {
+		display: block;
+	}
+} 
+
+figure.effect-ruby:hover h2 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	opacity: 0;
+}
+
+figure.effect-ruby:hover p {
+	opacity: 0;
+	-webkit-transform: translate3d(0,0,0) scale(.9);
+	transform: translate3d(0,0,0) scale(.9);
+}
