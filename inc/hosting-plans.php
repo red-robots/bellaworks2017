@@ -2,7 +2,7 @@
     <div class="plan plan1">
     	<h2 class="js-blocks">Tier 1</h2>
     	<h3>Website Hosting</h3>
-    	<div class="price">$20/month</div>
+    	<div class="price">$25/month</div>
     	<ul class="features">
     		<li><span class="first">Server Type:</span> VPS</li>
     		<li><span class="first">Storage Space:</span> 3 GB</li>
