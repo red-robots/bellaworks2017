@@ -875,6 +875,16 @@ section.why-work .image,section.about .image{display:block;width:100%;background
 section.why-work h2.part,section.about h2.part{text-align:left}
 section.why-work h2.part:after,section.about h2.part:after{content:"";position:absolute;left:0;bottom:-15px;height:1px;width:50%;border-bottom:3px solid #3689b5;clear:both}
 section.why-work h3,section.about h3{margin:0 0 20px 0;color:#3689b5}
+article.post{width:100%;margin:0 0 30px 0;float:left;background-color:white}
+article.post .content{display:block;width:90%;padding:5%;float:right;text-align:left;line-height:1.4;font-size:16px}
+article.post .content p{margin-bottom:20px}
+article.post .image{display:block;width:100%}
+@media screen and (min-width:600px){article.post .image{float:left;padding:0}
+}article.post .image img{width:100%}
+article.post h2{width:auto;position:relative;display:inline-block;margin-bottom:50px;line-height:1.1}
+article.post h2.part{text-align:left}
+article.post h2.part:after{content:"";position:absolute;left:0;bottom:-15px;height:1px;width:50%;border-bottom:3px solid #3689b5;clear:both}
+article.post h3{margin:0 0 20px 0;color:#3689b5}
 #home-intro{text-align:center;padding:0;background-size:cover;background-repeat:no-repeat;background-position:top center;position:relative;display:none}
 @media screen and (min-width:600px){#home-intro{display:block}
 }h2.homeintro{font-size:16px;line-height:1.2;color:#fff;font-family:"Noto Sans",sans-serif;text-align:left;font-weight:normal}
@@ -981,7 +991,7 @@ embed,iframe,object,video{max-width:100%}
 .author.archive .author-avatar{margin-top:0}
 @media screen and (min-width:600px){.author.archive .author-avatar{float:left;margin-top:8px}
 }html{font-size:87.5%}
-body{font-size:14px;font-family:Helvetica,Arial,sans-serif;text-rendering:optimizeLegibility;color:#444}
+body{font-size:14px;font-family:"Noto Sans",sans-serif;text-rendering:optimizeLegibility;color:#444}
 body.custom-font-enabled{font-family:"Open Sans",Helvetica,Arial,sans-serif}
 a{outline:0;color:#3689b5}
 a:hover{color:#0f3647}
@@ -1003,11 +1013,14 @@ a:hover{color:#0f3647}
 }@media screen and (min-width:600px){.wrapper{width:90%;margin:0 auto}
 }.site-content{margin:24px 0 0}
 @media screen and (min-width:600px){.site-content{margin:0;float:left;width:65.104166667%}
-}.news-bottom-block{width:auto;display:inline-block;float:left;margin:0 30px 0 0;padding:20px;background-color:#fff}
+}.site-content-news{margin:24px 0 0}
+@media screen and (min-width:600px){.site-content-news{margin:0;float:left;width:70.104166667%}
+}.news-bottom-block{width:100%;display:inline-block;float:right;margin:0;padding:20px;background-color:#fff}
 #secondary{margin:24px 0 0;padding:20px}
-@media screen and (min-width:600px){#secondary{float:right;width:23.041666667%;padding:0 2% 0 2%}
-}#secondary-news{margin-top:-50px}
-.widget-area{text-align:center}
+@media screen and (min-width:600px){#secondary{float:right;width:23.041666667%;padding:0 2% 0 2%;margin:110px 0 0 0}
+}#secondary-news{margin:24px 0 0;padding:20px}
+@media screen and (min-width:600px){#secondary-news{float:right;width:18.041666667%;padding:0 2% 0 2%}
+}.widget-area{text-align:center}
 @media screen and (min-width:600px){.widget-area{text-align:left}
 }.widget-area li{margin:0 0 0 20px;list-style:none}
 .widget-area a{text-decoration:none}
@@ -1085,7 +1098,7 @@ section[role="banner"]{margin-bottom:48px}
 .side-contact-item p{margin:0 0 20px 0;line-height:1.3;font-size:16px}
 .side-contact-item h2{margin:0 0 10px 0;color:#6ea01b;font-size:20px;font-family:"Noto Sans",sans-serif}
 .google-map{margin:0 0 30px 0}
-@media screen and (min-width:600px){.google-map{margin:0 0 30px 0;float:right}
+@media screen and (min-width:600px){.google-map{margin:0 0 30px 0;float:left}
 }.contact-form{margin:0 0 30px 0}
 @media screen and (min-width:600px){.contact-form{width:100%;margin:0 0 50px 0;float:left}
 }.contact-body{padding:10px 20px 20px 20px;background-color:rgba(255,255,255,0.8)}
@@ -1113,7 +1126,7 @@ section[role="banner"]{margin-bottom:48px}
 .read-port a{text-decoration:none;color:#fff}
 .bgcolor-beige{background-color:#f5f5f5}
 .bgcolor-grey{background-color:#fafafa}
-.portblock,.newsblock,.newsblock-full,.staff{box-shadow:0 0 9px 0 rgba(0,0,0,0.3);-webkit-transition:box-shadow .3s ease;transition:box-shadow .3s ease}
+.newsblock,.newsblock-full,.staff{box-shadow:0 0 9px 0 rgba(0,0,0,0.3);-webkit-transition:box-shadow .3s ease;transition:box-shadow .3s ease}
 .side-subpage{box-shadow:0 0 9px 0 rgba(0,0,0,0.1);-webkit-transition:all .3s ease;transition:all .3s ease}
 #filters{margin:0 0 20px 0}
 button.portbutton{width:auto;display:inline-block;margin:0 2px 0 0;padding:15px 20px;background-color:#5fa03d;color:#fff;border:0;box-shadow:none;text-shadow:none}
@@ -1137,7 +1150,7 @@ button.portbutton:hover{background-color:rgba(95,160,61,0.7) !important;cursor:p
 @media screen and (min-width:600px){.single-port-gallery .portblock{width:24%;float:left;margin:0 0 40px 0}
 }.single-port-gallery .portblock a{z-index:10001}
 .single-port-gallery .portblock:hover{opacity:1}
-.work-gallery .portblock{width:100%;float:left;margin:0 0 40px 0;opacity:1;cursor:pointer}
+.work-gallery .portblock{width:100%;float:left;margin:0 0 40px 0;opacity:1;cursor:pointer;background-color:rgba(218,218,218,0.6)}
 @media screen and (min-width:600px){.work-gallery .portblock{width:29%;float:left;margin:0 0 40px 0}
 }.work-gallery .portblock a{z-index:10001}
 .work-gallery .portblock:hover{opacity:1}
@@ -1170,7 +1183,7 @@ h3.moreproj a:hover{background-color:#6ea01b}
 .port-extra img{width:100%}
 .side-left{float:left;width:24.041666667%;padding:0 1% 0 1%}
 .side-left img{width:100%}
-.widget-area .widget{-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto;margin-top:40px;margin-bottom:28px;word-wrap:break-word}
+.widget-area .widget{-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto;margin-bottom:28px;word-wrap:break-word}
 .widget-area .widget h3{margin:0 0 10px 0;color:#6ea01b;font-size:20px;font-family:"Noto Sans",sans-serif}
 .widget-area .widget p,.widget-area .widget li,.widget-area .widget .textwidget{font-size:16px;line-height:1.846153846}
 .widget-area .widget p{margin-bottom:24px}

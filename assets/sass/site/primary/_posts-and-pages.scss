@@ -214,7 +214,73 @@ section.why-work, section.about {
 	}
 
 }
+article.post {
+	width: 100%;
+	margin: 0 0 30px 0;
+	float: left;
+	background-color: rgba(#fff,1);
+	a {
+		
+		&:hover {
+		
+		}
+	}
+	.content {
+		display: block;
+		width: 90%;
+		padding: 5%;
+		float: right;
+		text-align: left;
+		line-height: 1.4;
+		font-size: 16px;
+		@media screen and (min-width: $tabwidth) {
+			// width: 56%;
+		}
+		p {
+			margin-bottom: 20px;
+		}
+	}
+	.image {
+		display: block;
+		width: 100%;
+		@media screen and (min-width: $tabwidth) {
+			// width: 33%;
+			float: left;
+			padding: 0;
+		}
+		img {
+			width: 100%;
+		}
+	}
+	
+	h2{
+		width: auto;
+		position: relative;
+		display: inline-block;
+		// font-size: 40px;
+		margin-bottom: 50px;
+		line-height: 1.1;
 
+		&.part {
+			text-align: left;
+			&:after {
+				content : "";
+				position: absolute;
+				left    : 0%;
+				bottom  : -15px;
+				height  : 1px;
+				width   : 50%;  /* or 100px */
+				border-bottom:3px solid $color-blue;
+				clear: both;
+			}
+		}
+	}
+	h3 {
+		margin: 0 0 20px 0;
+		color: $color-blue;
+	}
+
+}
 #home-intro {
 	/*background-color: #f6f6f6;*/
 	text-align: center;

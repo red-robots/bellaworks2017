@@ -407,7 +407,7 @@ html {
 }
 body {
 	font-size: 14px;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: $font-noto;
 	text-rendering: optimizeLegibility;
 	color: #444;
 	
@@ -519,11 +519,22 @@ a:hover {
 
 	}
 }
+.site-content-news {
+	margin: 24px 0 0;
+	@media screen and (min-width: $tabwidth) {
+		margin: 0;	
+		float: left;
+		width: 70.104166667%;
+	}
+	@media screen and (min-width: $deskwidth) {
+
+	}
+}
 .news-bottom-block {
-	width: auto;
+	width: 100%;
 	display: inline-block;
-	float: left;
-	margin: 0 30px 0 0;
+	float: right;
+	margin: 0 0px 0 0;
 	padding: 20px;
 	background-color: #fff;	
 }
@@ -534,13 +545,23 @@ a:hover {
 		float: right;
 		width: 23.041666667%;
 		padding: 0 2% 0 2%;
+		margin: 110px 0 0 0;
 	}
 	@media screen and (min-width: $deskwidth) {
 
 	}
 }
 #secondary-news {
-	margin-top: -50px;	
+	margin: 24px 0 0;
+	padding: 20px;
+	@media screen and (min-width: $tabwidth) {
+		float: right;
+		width: 18.041666667%;
+		padding: 0 2% 0 2%;
+	}
+	@media screen and (min-width: $deskwidth) {
+
+	}
 }
 .widget-area {
 	
@@ -1132,7 +1153,7 @@ section[role="banner"] {
 	margin: 0 0 30px 0;
 	@media screen and (min-width: $tabwidth) {
 		margin: 0 0 30px 0;
-		float: right;
+		float: left;
 	}
 	@media screen and (min-width: $deskwidth) {
 
@@ -1312,7 +1333,7 @@ section[role="banner"] {
 .bgcolor-grey {
 	background-color: #FAFAFA;	
 }
-.portblock,
+// .portblock,
 .newsblock,
 .newsblock-full,
 .staff
@@ -1502,6 +1523,7 @@ position: absolute;
 		margin: 0 0 40px 0;	
 		opacity: 1;
 		cursor: pointer;
+		background-color: rgba(#dadada, .6);
 		@media screen and (min-width: $tabwidth) {
 			width: 29%;
 			float: left;
@@ -1677,7 +1699,7 @@ h3.moreproj a:hover {
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	hyphens: auto;
-	margin-top: 40px;
+	// margin-top: 40px;
 	margin-bottom: 28px;
 	word-wrap: break-word;
 }

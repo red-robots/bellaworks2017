@@ -111,7 +111,7 @@ if ($wp_query->have_posts()) : ?>
 </div><!-- home projects -->
     <?php endif; ?>
     
-<section class="why-work home-section wow fadeInUp" data-wow-delay=".3s">
+<section class="why-work home-section wow fadeInUp">
     <div class="content">
         <h2 class="part">Why Work With Us</h2>
         <h3>Your ideas matter to us.</h3>

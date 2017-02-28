@@ -7,7 +7,7 @@
 get_header(); ?>
 
 	<div class="wrapper">
-    <div id="primary" class="">
+    <div id="primary" class="site-content">
 		<div id="content" role="main">
         
         <header class="entry-header">
@@ -42,7 +42,7 @@ get_header(); ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
-		<div id="secondary-news" class="widget-area" role="complementary">
+		<div id="secondary" class="widget-area" role="complementary">
 			<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 				<?php dynamic_sidebar( 'sidebar-1' ); ?>
             <?php endif; ?>
