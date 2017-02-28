@@ -132,12 +132,6 @@ function walk_post_categories( $post_id, $args = array() ) {
 		return $output;
 }
 
-// add a favicon from your theme folder
-function mytheme_favicon() { 
- echo '<link rel="shortcut icon" href="' . get_bloginfo('stylesheet_directory') . '/images/favicon.ico" >'; 
-} 
-add_action('wp_head', 'mytheme_favicon');
-
 
 /*		Is Tree Function
 		Finds children pages beyond immediate.
