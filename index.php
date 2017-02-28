@@ -7,38 +7,21 @@
 
 get_header(); 
 
-$banner = get_bloginfo('template_url') . '/images/banner-3.gif?' . date("Ymdgis");
+$banner = get_bloginfo('template_url') . '/images/banner-4.gif?' . date("Ymdgis");
 ?>
 
 <div class="banner-home">
     <img src="<?php echo $banner; ?>">
-        <div class="banner-text">
-            <h2 class="homeintro">
-                Custom website design and development for businesses & non-profits who value a personalized approach
-            </h2>
-         </div>
-    </div>
+    <div class="banner-text">
+        <h2 class="homeintro">
+            Custom website design and development for businesses & non-profits who value a personalized approach
+        </h2>
+     </div>
+</div>
 
-<!-- <section class="welcome home-section">
-    <h2 class="center header">We design websites & digital identities.</h2>
-    <div class="banner-home">
-    <img src="<?php echo $banner; ?>">
-        <div class="banner-text">
-            <h2 class="homeintro">
-                Custom website design and development for businesses & non-profits who value a personalized approach
-            </h2>
-         </div>
-    </div>
-</section> -->
-
-    
-
-
-
-    
 <?php 
 
-// going to change to 3 ransom ones.
+// going to change to 3 random ones.
 $wp_query = new WP_Query();
 $wp_query->query(array(
 'post_type' => 'portfolio',
@@ -151,23 +134,16 @@ if ($wp_query->have_posts()) : ?>
                     $thumb = get_the_post_thumbnail($ID, 'homethumb');
                     ?>
                     
-                    	<!--<div class="homepost">
-                        	<div class="homepost-date"><?php echo get_the_date('m.d.Y'); ?></div>
-                            <h2 class="homepost-title"><?php the_title(); ?></h2>
-                            <div class="homepost-excerpt"><?php the_excerpt(); ?></div>
-                            <div class="homepost-readmore"><a href="<?php the_permalink(); ?>">keep reading</a></div>
-                        </div> homepost -->
-
-                        <div class="grid">
-                            <figure class="effect-ruby">
-                            <?php echo $thumb; ?>
-                                <figcaption>
-                                    <div class="small-excerpt"><?php the_excerpt(); ?></div>
-                                    <h2><?php the_title(); ?></h2>
-                                  <a href="<?php the_permalink(); ?>">Read more</a>
-                                </figcaption>
-                            </figure>
-                        </div><!-- grid -->
+                    <div class="grid">
+                        <figure class="effect-ruby">
+                        <?php echo $thumb; ?>
+                            <figcaption>
+                                <div class="small-excerpt"><?php the_excerpt(); ?></div>
+                                <h2><?php the_title(); ?></h2>
+                              <a href="<?php the_permalink(); ?>">Read more</a>
+                            </figcaption>
+                        </figure>
+                    </div><!-- grid -->
                     
                     <?php endwhile; ?>
                     <div class="home-latestpost-opacity" style=" background-color: rgba(255,255,255,<?php echo $opacity; ?>);">

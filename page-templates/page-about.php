@@ -36,7 +36,8 @@ get_header(); ?>
                         </div><!-- entry content -->
                 </div>
                 <div class="image-about">
-                    <img class="wow fadeInUp" src="<?php bloginfo('template_url'); ?>/images/pencil.png">
+                <?php $banner = get_bloginfo('template_url') . '/images/pencil.gif?' . date("Ymdgis"); ?>
+                    <img src="<?php echo $banner; ?>">
                 </div>
             </section>
 

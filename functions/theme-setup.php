@@ -88,7 +88,7 @@ function bellaworks_scripts_styles() {
 
 	wp_enqueue_style('bellaworks-roboto', 'https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700', false, null);
 	wp_enqueue_style('bellaworks-ubuntu', 'https://fonts.googleapis.com/css?family=Ubuntu:400,300,500', false, null);
-	wp_enqueue_style('bellaworks-somefonts', '//hello.myfonts.net/count/2d8b74', false, null);
+	// wp_enqueue_style('bellaworks-somefonts', '//hello.myfonts.net/count/2d8b74', false, null);
 
 	wp_enqueue_style('bellaworks-style', get_stylesheet_directory_uri().'/style.min.css', false, null);
 
