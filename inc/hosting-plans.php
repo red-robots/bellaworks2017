@@ -35,7 +35,7 @@
     	<h3>Website Hosting & Backups + Security Scans</h3>
     	<div class="price">$100/month</div>
     	<ul class="features">
-    		<li><span class="first">SERVER TYPE:</span> VPS</li>
+    		<li><span class="first">Server Type:</span> VPS</li>
     		<li><span class="first">Storage Space:</span> 10 GB</li>
     		<li><span class="first">Backups:</span> Realtime Backups, Spam Protection and Security Scanning included</li>
     		<li><span class="first">Site Restoration if Hacked:</span> Included</li>
