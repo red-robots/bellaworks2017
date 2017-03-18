@@ -62,14 +62,15 @@ section.welcome {
 		width: 100%;
 	}
 	.banner-text {
-		position: absolute;
-		width: 50%;
-		right: 20px;
-		top: 20%;
+		
+		width: 90%;
+		margin: 0 auto;
+		
 		@media screen and (min-width: $tabwidth) {
 			width: 60%;
 			right: 20px;
 			top: 5%;
+			position: absolute;
 		}
 		@media screen and (min-width: $deskwidth) {
 			width: 60%;
@@ -304,14 +305,23 @@ h2.homeintro {
 	font-family: $font-noto;
 	text-align: left;
 	font-weight: normal;
+	width: 100%;
+	text-align: center;
+	margin :0% 0 0px 0;
+	background-color: rgba($color-blue, 1);
 	@media screen and (min-width: $tabwidth) {
-		font-size: 24px;
-		width: 75%;
+		font-size: 20px;
+		width: 60%;
 		display: block;
-		margin :9% auto 0px auto;
+		margin :8% 0 0px 0;
+		float: right;
+		background-color: rgba($color-blue, 0);
+		text-align: left;
 	}
 	@media screen and (min-width: $deskwidth) {
 		font-size: 36px;
+		width: 60%;
+		margin :8% 0 0px 0;
 	}
 }
 .hit {

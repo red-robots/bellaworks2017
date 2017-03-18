@@ -7,7 +7,7 @@
 
 get_header(); 
 
-$banner = get_bloginfo('template_url') . '/images/banner-4.gif?' . date("Ymdgis");
+$banner = get_bloginfo('template_url') . '/images/banner-5.gif?' . date("Ymdgis");
 ?>
 
 <div class="banner-home">
