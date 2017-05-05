@@ -8,7 +8,26 @@
 jQuery(document).ready(function ($) {
 	
 	
-	
+	$('#masthead .phone a').one('click',function(e){
+	    e.preventDefault();
+	    function temp(){
+	        var $this = $(this);
+	        if($this.attr('href')!==undefined) {
+                window.location = $this.attr('href');
+            }
+        }
+        var placeCall = temp.bind(this);
+	    setTimeout(placeCall,1000);
+        ga('send', {
+            hitType: 'event',
+            hitCallback: function(){
+                placeCall();
+            },
+            eventCategory: 'Phone',
+            eventAction: 'Click',
+            eventLabel: 'Header'
+        });
+    });
 	
 	
 	// Flexslider

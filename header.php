@@ -94,7 +94,7 @@ src="https://www.facebook.com/tr?id=1107124109368587&ev=PageView&noscript=1"
         
 
         
-        	<div class="phone"><?php echo $phone ?></div><!-- phone -->
+            <div class="phone"><a href="tel:<?php echo preg_replace('/[^0-9]/',"",$phone);?>"><?php echo $phone ?></a></div><!-- phone -->
         
         <nav id="site-navigation" class="main-navigation" role="navigation">
           <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'MENU', 'acstarter' ); ?></button>
