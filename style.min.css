@@ -1026,7 +1026,7 @@ a:hover{color:#0f3647}
 .widget-area a{text-decoration:none}
 #sociallinks{position:relative;float:right;z-index:6;text-align:left}
 .top-wrap{width:100%;background-color:#3689b5}
-@media screen and (min-width:1200px){.top-wrap{position:fixed;top:0;z-index:100000}
+@media screen and (min-width:1200px){.top-wrap{position:fixed;top:0;z-index:9998}
 }.logo,h1.logo{width:200px;height:39px;background-image:url(images/logo-new-white.png);background-size:cover;margin:40px auto}
 @media screen and (min-width:600px){.logo,h1.logo{width:280px;height:54px;float:left;margin:10px 0 10px 0}
 }@media screen and (min-width:1200px){.logo,h1.logo{margin:40px 0 10px 0;width:300px;height:58px}
@@ -1156,7 +1156,8 @@ button.portbutton:hover{background-color:rgba(95,160,61,0.7) !important;cursor:p
 .work-gallery .portblock:hover{opacity:1}
 .port-image{margin-bottom:30px}
 @media screen and (min-width:600px){.port-image{width:28%}
-}.port-image img{width:100%}
+}.port-image a{display:block}
+.port-image img{width:100%}
 .single-proj-nav{text-align:center;margin-bottom:30px}
 h3.nextproj{width:auto;display:inline-block;margin:0 auto 20px auto;line-height:1;font-family:"Noto Sans",sans-serif;font-size:14px}
 h3.moreproj a{margin:0 0 20px 0;line-height:1;font-family:"Noto Sans",sans-serif;font-size:14px;padding:10px 15px;background-color:rgba(110,160,27,0.7);-webkit-transition:background-color .3s ease;transition:background-color .3s ease;color:#fff;text-decoration:none}

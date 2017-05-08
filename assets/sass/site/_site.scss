@@ -600,7 +600,7 @@ a:hover {
 	@media screen and (min-width: $deskwidth) {
 		position: fixed;
 		top: 0;
-		z-index: 100000;
+		z-index: 9998;
 	}
 }
 /* Logo */
@@ -1545,6 +1545,10 @@ position: absolute;
 	}
 	@media screen and (min-width: $deskwidth) {
 
+	}
+
+	a {
+		display: block;
 	}
 }
 .port-image img {
