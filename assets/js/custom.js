@@ -51,7 +51,15 @@ jQuery(document).ready(function ($) {
 			rel:'gal',
 			width: '80%', 
 			height: '80%',
-			inline:true,
+			inline: true,
+		});
+
+		// Colorbox for Single Portfolio
+		$('a.port').colorbox({
+			rel:'port',
+			width: '80%', 
+			height: '80%',
+			inline: true,
 		});
 	
 	

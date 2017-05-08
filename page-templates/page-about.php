@@ -8,14 +8,8 @@ get_header(); ?>
 
 	<div class="wrapper">
     
-    
-            
-    
-    
-    <div id="primary" class="">
-		<div id="content" role="main">
-        
-        
+        <div id="primary" class="">
+		  <div id="content" role="main">
         
         <?php while ( have_posts() ) : the_post(); ?>
 
@@ -40,31 +34,37 @@ get_header(); ?>
                     <img src="<?php echo $banner; ?>">
                 </div>
             </section>
-
-
-			<!--<div class="about-contents">	
-            
-
-           </div> secondary -->
+        <?php endwhile; // end of the loop. ?>
+        
+    <section class="staff-section">
+        <header class="entry-header">
+            <h2 class="section-header">Our Staff</h2>
+        </header>
+            <?php
+                $wp_query = new WP_Query();
+                $wp_query->query(array(
+                'post_type'=>'staff',
+                'posts_per_page' => -1,
+                'orderby'   => 'menu_order',
+                'order'     => 'ASC',
+                'paged' => $paged
+            ));
+                if ($wp_query->have_posts()) : 
+                // set count for class
+                  $count = 0; 
+                ?>
+                    <div class="staff-container">
+                    <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+                      
+                        <?php get_template_part('inc/staff'); ?>
                 
-		<?php endwhile; // end of the loop. ?>
-        
-        
-<!-- About Us
-
-
-
-Our Focus
-
-
-
-Our Team
-
-
-
-Supporting our Community
-
-Bellaworks supports the work of organizations who are making a positive impact in the community. We offer a 5% pricing discount to all qualified non-profit organizations. -->
+                    <?php endwhile; ?>
+                    </div><!-- staff container -->
+                    <?php pagi_posts_nav(); ?>
+                    
+                <?php endif; ?>
+            </section>
+            <!-- staff -->
 
 		</div><!-- #content -->
 	</div><!-- #primary -->

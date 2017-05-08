@@ -66,47 +66,40 @@ src="https://www.facebook.com/tr?id=1107124109368587&ev=PageView&noscript=1"
 <div id="skrollr-body"></div>
 <div id="page" class="hfeed site">
 
-<div class="top-wrap">
-<div class="wrapper">
-	<header id="masthead" class="site-header" role="banner">
-    
-		<?php if(is_home()) { ?>
-            <h1 class="logo"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+  <div class="top-wrap">
+    <div class="wrapper">
+      <header id="masthead" class="site-header" role="banner">
+        <?php if(is_home()) { ?>
+          <h1 class="logo"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
         <?php } else { ?>
-            <div class="logo"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></div>
+          <div class="logo"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></div>
         <?php } ?>
-        
-		<div class="header-right">
-        
-        
+        <div class="header-right">
         <?php 
-			$address = get_field('address','option'); 
-			$city = get_field('city','option');
-			$state = get_field('state','option');
-			$zip = get_field('zip','option');
-			$year = date('Y');
-			$phone = get_field('phone_number','option');
-			$fax = get_field('fax','option');
-			 ?>
-             <div class="header-address">
-			  <?php echo $address . ' | ' . $city . ', ' . $state . ' ' . $zip; ?>
-              </div><!-- header-address -->
-        
+          $address = get_field('address','option'); 
+          $city = get_field('city','option');
+          $state = get_field('state','option');
+          $zip = get_field('zip','option');
+          $year = date('Y');
+          $phone = get_field('phone_number','option');
+          $fax = get_field('fax','option');
+        ?>
+          <div class="header-address">
+            <?php echo $address . ' | ' . $city . ', ' . $state . ' ' . $zip; ?>
+          </div><!-- header-address -->
+          
+          <div class="phone">
+            <a href="tel:<?php echo preg_replace('/[^0-9]/',"",$phone);?>"><?php echo $phone ?></a>
+          </div><!-- phone -->
 
-        
-            <div class="phone"><a href="tel:<?php echo preg_replace('/[^0-9]/',"",$phone);?>"><?php echo $phone ?></a></div><!-- phone -->
-        
-        <nav id="site-navigation" class="main-navigation" role="navigation">
-          <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'MENU', 'acstarter' ); ?></button>
-          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-        </nav><!-- #site-navigation -->
-            
-            	
-            
+          <nav id="site-navigation" class="main-navigation" role="navigation">
+            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'MENU', 'acstarter' ); ?></button>
+            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+          </nav><!-- #site-navigation -->
+
         </div><!-- header right -->
-
-	</header><!-- #masthead -->
-   </div><!-- wrapper -->
+      </header><!-- #masthead -->
+    </div><!-- wrapper -->
   </div><!-- top wrap -->
    
    <?php 
@@ -116,10 +109,10 @@ src="https://www.facebook.com/tr?id=1107124109368587&ev=PageView&noscript=1"
    ?>
 
 	
-    <?php if ( is_page('news') ) {
+<?php if ( is_page('news') ) {
 		$pageClass = 'bgcolor-beige';
 	} else {
 		$pageClass = 'bgcolor-grey';
 	}
 	?>
-    <div id="main" class="<?php echo $pageClass; ?>">
+<div id="main" class="<?php echo $pageClass; ?>">
