@@ -24,7 +24,12 @@ get_header(); ?>
 		<?php while(have_posts()) :  ?>	
         <?php the_post(); ?>		
 
-			<?php get_template_part('inc/news'); ?>
+			<?php 
+
+				//get_template_part('inc/news'); 
+				get_template_part('inc/news-full');
+
+			?>
             
         <?php endwhile; ?>
         </div><!-- container -->

@@ -7,6 +7,21 @@
 
 jQuery(document).ready(function ($) {
 	
+	// Colorbox for Single Portfolio
+		$('.gallery').colorbox({
+			rel:'gallery',
+			width: '80%', 
+			height: '80%',
+			// inline: true,
+		});
+
+		// Colorbox for Single Portfolio
+		$('a.port').colorbox({
+			rel:'port',
+			width: '80%', 
+			height: '80%',
+			inline: true,
+		});
 	
 	$('#masthead .phone a').one('click',function(e){
 	    e.preventDefault();
@@ -47,13 +62,7 @@ jQuery(document).ready(function ($) {
 	});*/
 	
 	
-	// Colorbox for Single Portfolio
-		$('a.gallery').colorbox({
-			rel:'gal',
-			width: '80%', 
-			height: '80%',
-			inline:true,
-		});
+	
 	
 	
 	

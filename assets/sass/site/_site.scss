@@ -600,7 +600,7 @@ a:hover {
 	@media screen and (min-width: $deskwidth) {
 		position: fixed;
 		top: 0;
-		z-index: 100000;
+		z-index: 9998;
 	}
 }
 /* Logo */
@@ -1546,6 +1546,10 @@ position: absolute;
 	@media screen and (min-width: $deskwidth) {
 
 	}
+
+	a {
+		display: block;
+	}
 }
 .port-image img {
 	width: 100%;
@@ -1614,7 +1618,7 @@ h3.moreproj a:hover {
 }
 
 .meta {
-	width: auto;
+	width: 100%;
 	display: inline-block;
 	padding: 5px 0 5px 0;
 	border-top: 1px solid #ccc;

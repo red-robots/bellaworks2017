@@ -118,7 +118,7 @@ get_header(); ?>
         
        <div class="item port-image">
        <!--<a class="gallery" href="<?php //echo $large; ?>">-->
-       <a class="gallery" href="#open-<?php echo $count; ?>">
+       <a class="gallery" href="<?php echo $large; ?>" rel="port">
         <img class="<?php echo $imageClass ?>" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" title="<?php echo $title; ?>" />
         </a>
         <?php //echo custom_field_excerpt(); ?>
