@@ -25,7 +25,8 @@ jQuery(document).ready(function ($) {
             },
             eventCategory: 'Phone',
             eventAction: 'Click',
-            eventLabel: 'Header'
+            eventLabel: 'Header',
+            eventValue: 1
         });
     });
 	
