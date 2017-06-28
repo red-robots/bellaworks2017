@@ -22,34 +22,35 @@ $daysOfWeek = get_field('days_of_week');
 $hours = get_field('hours');
 ?>
 
-<div class="side-contact">
+<div itemscope itemtype="http://schema.org/LocalBusiness" class="side-contact">
 
 	<div class="side-contact-item">
 	<h2>Address</h2>
-    <p>
-    <?php echo $address . '<br>';
-		   echo $city . ', ' . $state . ' ' . $zip . '<br>';
+    <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+    <span itemprop="streetAddress"><?php echo $address . '</span><br>';
+		   echo '<span itemprop="addressLocality">'.$city . '</span>, <span itemprop="addressRegion">' . $state . '</span> <span itemprop="postalCode">' . $zip . '</span><br>';
 	?>
     </p>
     </div><!-- side contact item -->
     
     <div class="side-contact-item">
     <h2>Phone</h2>
-    <p>
+    <p itemprop="telephone">
     <?php echo $phone; ?>
     </p>
     <h2>Email</h2>
     <p>
     <a href="mailto:<?php echo antispambot($email); ?>">
-  	<?php echo antispambot($email); ?>
+  	<span itemprop="email"><?php echo antispambot($email); ?></span>
 		</a>
     </p>
     </div><!-- side contact item -->
     
     <div class="side-contact-item">
     <h2>Hours</h2>
-    <p>
-    <?php echo $daysOfWeek . '<br>';
+    <p itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+<span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
+    <span itemprop="name"><?php echo $daysOfWeek . '</span></span><br>';
 		   echo $hours;
 	
 	 ?>

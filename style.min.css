@@ -1133,7 +1133,6 @@ button.portbutton{width:auto;display:inline-block;margin:0 2px 0 0;padding:15px 
 button.portbutton:hover{background-color:rgba(95,160,61,0.7) !important;cursor:pointer;background-image:none}
 .port-img{position:relative;overflow:hidden}
 .port-img img{width:100%;opacity:1;-webkit-transition:opacity .35s,-webkit-transform .35s;transition:opacity .35s,-webkit-transform .35s;transition:opacity .35s,transform .35s;transition:opacity .35s,transform .35s,-webkit-transform .35s;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}
-.portblock:hover img{opacity:.1;-webkit-transform:scale(1.15);-ms-transform:scale(1.15);transform:scale(1.15)}
 .port-img-hover{position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden;opacity:0;background-attachment:fixed;-webkit-font-smoothing:antialiased;background-image:-webkit-linear-gradient(260deg,#3689b5 0,#5fa03d 100%);background-image:linear-gradient(-170deg,#3689b5 0,#5fa03d 100%);color:#fff;font-size:16px;text-align:center;z-index:10000;-webkit-transition:all .35s;transition:all .35s;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}
 .nobg{background-image:none}
 .portblock:hover .port-img-hover{opacity:1;-webkit-transform:scale(1.15);-ms-transform:scale(1.15);transform:scale(1.15)}
@@ -1150,10 +1149,15 @@ button.portbutton:hover{background-color:rgba(95,160,61,0.7) !important;cursor:p
 @media screen and (min-width:600px){.single-port-gallery .portblock{width:24%;float:left;margin:0 0 40px 0}
 }.single-port-gallery .portblock a{z-index:10001}
 .single-port-gallery .portblock:hover{opacity:1}
-.work-gallery .portblock{width:100%;float:left;margin:0 0 40px 0;opacity:1;cursor:pointer;background-color:rgba(232,232,232,0)}
-@media screen and (min-width:600px){.work-gallery .portblock{width:29%;float:left;margin:0 0 40px 0}
+.work-gallery{width:80%;margin:0 auto}
+.work-gallery .portblock{width:100%;position:relative;margin:0 0 60px 0;opacity:1;cursor:pointer;background-color:rgba(232,232,232,0)}
+@media screen and (min-width:600px){.work-gallery .portblock{width:45%;margin:0 0 40px 0}
 }.work-gallery .portblock a{z-index:10001}
-.work-gallery .portblock:hover{opacity:1}
+.work-gallery .portblock .below{width:100%;padding:5% 0;text-align:center}
+.work-gallery .portblock .below h2{font-size:20px;font-weight:300}
+.work-gallery .portblock .portfolio-link a{width:100%;height:100%;position:absolute;top:0;left:0;text-indent:-9000px}
+.work-gallery .portblock.left{float:left}
+.work-gallery .portblock.right{float:right}
 .port-image{margin-bottom:30px}
 @media screen and (min-width:600px){.port-image{width:28%}
 }.port-image a{display:block}

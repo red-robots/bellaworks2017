@@ -11,6 +11,16 @@
 ?>
 	</div><!-- #main .wrapper -->
 	
+	<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+	<meta itemprop="streetAddress" content="220 East Blvd Suite 200A">
+	<meta itemprop="addressLocality" content="Charlotte">
+	<meta itemprop="addressRegion" content="North Carolina">
+	<meta itemprop="addressCountry" content="United States">
+	<meta itemprop="postalCode" content="28203"></span>
+	<meta itemprop="name" content="Bellaworks">
+	<meta itemprop="url" content="https://bellaworksweb.com/">
+	<meta itemprop="email" content="info@bellaworksweb.com">
+
 </div><!-- #page -->
 
 <footer id="colophon" role="contentinfo">

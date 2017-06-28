@@ -1386,9 +1386,9 @@ button.portbutton:hover {
 	transform: scale(1);
 }
 .portblock:hover img {
-	opacity: .1;
-	-webkit-transform: scale(1.15);
-	transform: scale(1.15);
+	// opacity: .1;
+	// -webkit-transform: scale(1.15);
+	// transform: scale(1.15);
 }
 .port-img-hover {
 	position: absolute;
@@ -1504,6 +1504,7 @@ position: absolute;
 		cursor: pointer;
 		@media screen and (min-width: $tabwidth) {
 			width: 24%;
+			// width: 40%;
 			float: left;
 			margin: 0 0 40px 0;	
 		}
@@ -1517,16 +1518,20 @@ position: absolute;
 	}
 }
 .work-gallery {
+	width: 80%;
+	margin: 0 auto;
 	.portblock {
 		width: 100%;
-		float: left;
-		margin: 0 0 40px 0;	
+		// float: left;
+		position: relative;
+		margin: 0 0 60px 0;	
 		opacity: 1;
 		cursor: pointer;
 		background-color: rgba(232,232,232, 0);
 		@media screen and (min-width: $tabwidth) {
-			width: 29%;
-			float: left;
+			// width: 29%;
+			width: 45%;
+			// float: none;
 			margin: 0 0 40px 0;	
 		}
 		@media screen and (min-width: $deskwidth) {
@@ -1535,7 +1540,37 @@ position: absolute;
 		a {
 			z-index: 10001;
 		}
-		&:hover {opacity: 1;}
+		&:hover {
+
+		}
+		.below {
+			width: 100%;
+			// background-color: #fff;
+			// border-top: 2px solid #333;
+			padding: 5% 0;
+			text-align: center;
+			h2 {
+				font: {
+					size: 20px;
+					weight: 300;
+				}
+			}
+		}
+		.portfolio-link a {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			text-indent: -9000px;
+		}
+		&.left {
+			float: left;
+
+		}
+		&.right {
+			float: right;
+		}
 	}
 }
 .port-image {
