@@ -96,12 +96,12 @@ src="https://www.facebook.com/tr?id=1107124109368587&ev=PageView&noscript=1"
         <?php if(is_home()) { ?>
           <h1 class="logo" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
           <a href="<?php bloginfo('url'); ?>">
-          <img src="<?php bloginfo('template_url'); ?>/images/logo-new.png" width="250" itemprop="url">
+          <img src="<?php bloginfo('template_url'); ?>/images/logo-new.png" itemprop="url">
           </a></h1>
         <?php } else { ?>
           <div class="logo" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
           <a href="<?php bloginfo('url'); ?>">
-          <img src="<?php bloginfo('template_url'); ?>/images/logo-new.png" width="250" itemprop="url">
+          <img src="<?php bloginfo('template_url'); ?>/images/logo-new.png" itemprop="url">
           </a></div>
         <?php } ?>
         <div class="header-right">
