@@ -75,11 +75,8 @@ src="https://www.facebook.com/tr?id=1107124109368587&ev=PageView&noscript=1"
     "addressCountry" : "United States",
     "postalCode" : "28203"
   },
-  "url" : "https://bellaworksweb.com/",
-  "geo": {
-   "hasMap": "https://www.google.com/maps/place/Bellaworks/@35.210889,-80.85709,15z/data=!4m5!3m4!1s0x0:0xd29b466726585022!8m2!3d35.210889!4d-80.85709",
-   "openingHours": "Mo, Tu, We, Th, Fr 9:00-17:00"
-  }
+  "url" : "https://bellaworksweb.com/"
+  
 }
 </script>
 
