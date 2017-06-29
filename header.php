@@ -64,7 +64,7 @@ src="https://www.facebook.com/tr?id=1107124109368587&ev=PageView&noscript=1"
   "@context" : "http://schema.org",
   "@type" : "LocalBusiness",
   "name" : "Bellaworks Web Design",
-  "logo" : "https:\/\/bellaworksweb.com\/bw\/wp-content\/themes\/bellaworks2017\/images\/logo-new.png",
+  "image" : "https://bellaworksweb.com/bw/wp-content/themes/bellaworks2017/images/logo-new.png",
   "telephone" : "704.375.0831",
   "email" : "info@bellaworksweb.com",
   "address" : {
@@ -94,9 +94,9 @@ src="https://www.facebook.com/tr?id=1107124109368587&ev=PageView&noscript=1"
     <div class="wrapper">
       <header id="masthead" class="site-header" role="banner">
         <?php if(is_home()) { ?>
-          <h1 class="logo"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+          <h1 class="logo" itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
         <?php } else { ?>
-          <div class="logo"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></div>
+          <div class="logo" itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></div>
         <?php } ?>
         <div class="header-right">
         <?php 
