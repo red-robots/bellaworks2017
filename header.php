@@ -64,7 +64,7 @@ src="https://www.facebook.com/tr?id=1107124109368587&ev=PageView&noscript=1"
   "@context" : "http://schema.org",
   "@type" : "LocalBusiness",
   "name" : "Bellaworks Web Design",
-  "image" : "https://bellaworksweb.com/bw/wp-content/themes/bellaworks2017/images/logo-new.png",
+  "image" : "https:\/\/bellaworksweb.com\/bw\/wp-content\/themes\/bellaworks2017\/images\/logo-new.png",
   "telephone" : "704.375.0831",
   "email" : "info@bellaworksweb.com",
   "address" : {
