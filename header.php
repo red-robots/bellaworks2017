@@ -69,13 +69,17 @@ src="https://www.facebook.com/tr?id=1107124109368587&ev=PageView&noscript=1"
   "email" : "info@bellaworksweb.com",
   "address" : {
     "@type" : "PostalAddress",
-    "streetAddress" : "220 East Blvd Suite 200A",
+    "streetAddress" : "220 East Blvd #200a",
     "addressLocality" : "Charlotte",
     "addressRegion" : "North Carolina",
     "addressCountry" : "United States",
     "postalCode" : "28203"
   },
-  "url" : "https://bellaworksweb.com/"
+  "url" : "https://bellaworksweb.com/",
+  "sameAs": [
+    "http://www.facebook.com/bellaworks",
+    "https://www.linkedin.com/company/1060900"
+  ]
   
 }
 </script>
