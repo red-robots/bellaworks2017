@@ -38,6 +38,39 @@ function js_custom_init()
   ); 
   register_post_type('portfolio',$args); // name used in query
   
+   // Staff
+    $labels = array(
+  'name' => _x('Case Studies', 'post type general name'),
+    'singular_name' => _x('Case Studies', 'post type singular name'),
+    'add_new' => _x('Add New', 'Case Studies'),
+    'add_new_item' => __('Add New Case Studies'),
+    'edit_item' => __('Edit Case Studies'),
+    'new_item' => __('New Case Studies'),
+    'view_item' => __('View Case Studies'),
+    'search_items' => __('Search Case Studies'),
+    'not_found' =>  __('No Case Studies found'),
+    'not_found_in_trash' => __('No Case Studies found in Trash'), 
+    'parent_item_colon' => '',
+    'menu_name' => 'Case Studies'
+  );
+  $args = array(
+  'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true, 
+    'show_in_menu' => true, 
+    'query_var' => true,
+     'rewrite'            => array( 'slug' => 'case-study' ),
+    'capability_type' => 'post',
+    'has_archive' => false, 
+    'hierarchical' => false, // 'false' acts like posts 'true' acts like pages
+    'menu_position' => 20,
+    'supports' => array('title','editor','custom-fields','excerpt'),
+  
+  ); 
+  register_post_type('case_study',$args); // name used in query
+
+
   // Staff
     $labels = array(
 	'name' => _x('Staff', 'post type general name'),
