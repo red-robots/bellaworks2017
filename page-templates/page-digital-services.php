@@ -36,8 +36,7 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
             
 
-<?php //endif; 
-endif; // end if is page ?>
+
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
