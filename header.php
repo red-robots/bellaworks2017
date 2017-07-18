@@ -35,6 +35,7 @@
 <link rel="manifest" href="<?php bloginfo('template_url'); ?>/favicons/manifest.json">
 <link rel="mask-icon" href="<?php bloginfo('template_url'); ?>/favicons/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="theme-color" content="#ffffff">
+<meta name="p:domain_verify" content="829ccd403f67421fa2ee9a5f56c6eea6"/>
 
 
 
