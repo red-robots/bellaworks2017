@@ -26,7 +26,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 
-
+<script src="https://use.fontawesome.com/762c66dd2b.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
 
 <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url'); ?>/favicons/apple-touch-icon.png">
@@ -79,7 +79,8 @@ src="https://www.facebook.com/tr?id=1107124109368587&ev=PageView&noscript=1"
   "url" : "https://bellaworksweb.com/",
   "sameAs": [
     "http://www.facebook.com/bellaworks",
-    "https://www.linkedin.com/company/1060900"
+    "https://www.linkedin.com/company/1060900",
+    "https://www.pinterest.com/bellaworksweb/pins/"
   ]
   
 }

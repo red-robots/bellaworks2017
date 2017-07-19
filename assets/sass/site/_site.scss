@@ -589,6 +589,55 @@ a:hover {
 	z-index: 6;	
 	text-align: left;
 }
+.social {
+	width: auto;
+	display: inline-block;
+	margin: 0 10px 0 0;
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		margin: 0 3px 0 3px;
+		padding: 0;
+		@media screen and (min-width: $tabwidth) {
+			margin: 0 0 0 5px;
+		}
+	}
+	i {
+		width: auto;
+		height: auto;
+		position: relative;
+		color: $color-blue;
+		font-size: 35px;
+		transform: scale(.8);
+		@include transition(all ease .3s);
+		&:hover {
+			transform: scale(1);
+		}
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+	// &.social-head {
+	// 	i {
+	// 		color: $color-teal;
+	// 	}
+	// }
+	// &.social-footer {
+	// 	i {
+	// 		color: $color-dark-gray;
+	// 	}
+	// }
+}
 .top-wrap {
 	width: 100%;
 	// float: left;
@@ -1809,7 +1858,7 @@ footer[role="contentinfo"] a:hover {
 	@media screen and (min-width: $tabwidth) {
 		width: auto;
 		float: left;
-		padding: 15px 10px 0 0;
+		padding: 7px 10px 0 0;
 	}
 	@media screen and (min-width: $deskwidth) {
 
