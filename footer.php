@@ -96,6 +96,8 @@
 <?php the_field('google_analtyics','option'); ?>
 <?php wp_footer(); ?>
 
-
+<!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/3838522.js"></script>
+<!-- End of HubSpot Embed Code -->
 </body>
 </html>
