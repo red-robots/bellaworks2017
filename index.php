@@ -14,7 +14,7 @@ $banner = get_bloginfo('template_url') . '/images/banner-5.gif?' . date("Ymdgis"
     <img src="<?php echo $banner; ?>">
     <div class="banner-text">
         <h2 class="homeintro">
-            <span itemprop="priceRange">Custom website design and development for businesses & non-profits who value a personalized approach</span>
+            <span itemprop="priceRange">Helping Businesses Succeed. Custom website design and development for businesses who value a personalized approach.</span>
         </h2>
      </div>
 </div>
