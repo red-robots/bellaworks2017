@@ -6,6 +6,13 @@
 ------------------------------------------------*/ 
 add_image_size( 'thumbfeed', 480, 9999 );
 add_image_size( 'homethumb', 480, 480, array('center','center', true) );
+
+function bellaworks_regenerate_thumbnail_quality() {
+    return 100;
+ 
+}
+ 
+add_filter( 'jpeg_quality', 'bellaworks_regenerate_thumbnail_quality');
  /*---------------------------------------------
 
 		Show admin bar
