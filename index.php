@@ -14,8 +14,12 @@ $banner = get_bloginfo('template_url') . '/images/banner-5.gif?' . date("Ymdgis"
     <img src="<?php echo $banner; ?>">
     <div class="banner-text">
         <h2 class="homeintro">
-            <span itemprop="priceRange">Helping Businesses Succeed. Custom website design and development for businesses who value a personalized approach.</span>
+            <!-- <span itemprop="priceRange">Creative Digital Strategies. Custom website design and development for businesses who value a personalized approach.</span> -->
+            <span itemprop="priceRange">Creative Digital Strategies.</span> 
         </h2>
+        <h3 class="wwd">
+           We design a custom online presence branded to align with your company, engage with your customers, and strategically drive results.
+        </h3>
      </div>
 </div>
 

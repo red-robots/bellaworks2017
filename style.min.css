@@ -890,7 +890,8 @@ article.post h3{margin:0 0 20px 0;color:#3689b5}
 }h2.homeintro{font-size:16px;line-height:1.2;color:#fff;font-family:"Noto Sans",sans-serif;text-align:left;font-weight:normal;width:100%;text-align:center;margin:0;background-color:#3689b5}
 @media screen and (min-width:600px){h2.homeintro{font-size:20px;width:60%;display:block;margin:8% 0 0 0;float:right;background-color:rgba(54,137,181,0);text-align:left}
 }@media screen and (min-width:1200px){h2.homeintro{font-size:36px;width:60%;margin:8% 0 0 0}
-}.hit{width:auto;display:inline-block;margin:0 auto;padding:0;clear:both}
+}h3.wwd{width:60%;float:right;color:#fff;margin:20px 0 0 0;font-size:24px;font-weight:normal}
+.hit{width:auto;display:inline-block;margin:0 auto;padding:0;clear:both}
 .home-intro-subtext{font-family:"Noto Sans",sans-serif;font-size:18px;color:#969393;text-align:center;line-height:1.3;font-weight:normal}
 @media screen and (min-width:600px){.home-intro-subtext{width:100%;text-align:center;position:absolute;bottom:0;display:inline-block;margin-left:-50%}
 }.home-projects{background-color:#fff;padding:50px 0 20px 0;overflow:hidden;width:100%;position:relative}
