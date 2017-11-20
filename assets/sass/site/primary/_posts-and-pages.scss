@@ -59,7 +59,11 @@ section.welcome {
 	background-color: $color-blue;
 	// background-image: -webkit-gradient(linear,0% 0%,25% 100%,from($color-blue),to($color-green));
 	img {
+		display: none;
 		width: 100%;
+		@media screen and (min-width: $tabwidth) {
+			display: block;
+		}
 	}
 	.banner-text {
 		
@@ -299,7 +303,7 @@ article.post {
 	}
 }
 h2.homeintro {
-	font-size: 16px;
+	font-size: 28px;
 	line-height: 1.2;
 	color: #fff;
 	font-family: $font-noto;
@@ -307,7 +311,7 @@ h2.homeintro {
 	font-weight: normal;
 	width: 100%;
 	text-align: center;
-	margin :0% 0 0px 0;
+	margin :20px 0% 0 0px 0;
 	background-color: rgba($color-blue, 1);
 	@media screen and (min-width: $tabwidth) {
 		font-size: 20px;
@@ -317,6 +321,7 @@ h2.homeintro {
 		float: right;
 		background-color: rgba($color-blue, 0);
 		text-align: left;
+		font-size: 20px;
 	}
 	@media screen and (min-width: $deskwidth) {
 		font-size: 36px;
@@ -325,13 +330,24 @@ h2.homeintro {
 	}
 }
 h3.wwd {
-	width: 60%;
-	float: right;
+	width: 90%;
 	color: #fff;
-	margin: 20px 0 0 0;
+	margin: 20px auto 0 auto;
+	text-align: center;
 	font: {
-		size: 24px;
+		size: 18px;
 		weight: normal;
+	}
+	@media screen and (min-width: $tabwidth) {
+		width: 60%;
+		float: right;
+		margin: 20px 0 0 0;
+		font-size: 12px;
+		text-align: left;
+	}
+	@media screen and (min-width: $deskwidth) {
+		margin: 20px 0 0 0;
+		font-size: 24px;
 	}
 }
 .hit {
