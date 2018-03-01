@@ -24,7 +24,7 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-
+<script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0073/7914.js" async="async"></script>
 
 <script src="https://use.fontawesome.com/762c66dd2b.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
